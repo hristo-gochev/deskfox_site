@@ -672,6 +672,11 @@ video {
   margin-bottom: 5rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1970,6 +1975,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pl-4{
   padding-left: 1rem;
 }
@@ -2558,7 +2568,7 @@ video {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 840px) {
   .logo-text{
     display:block;
   }
@@ -2710,10 +2720,6 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:flex{
-    display: flex;
-  }
-
   .md\:w-10\/12{
     width: 83.333333%;
   }
@@ -2724,10 +2730,6 @@ video {
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:gap-7{
-    gap: 1.75rem;
   }
 
   .md\:gap-6{
@@ -2798,16 +2800,16 @@ video {
     justify-content: flex-end;
   }
 
+  .lg\:gap-7{
+    gap: 1.75rem;
+  }
+
   .lg\:gap-12{
     gap: 3rem;
   }
 
   .lg\:gap-10{
     gap: 2.5rem;
-  }
-
-  .lg\:gap-7{
-    gap: 1.75rem;
   }
 
   .lg\:px-36{
