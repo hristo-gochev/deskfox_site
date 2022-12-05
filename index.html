@@ -14,14 +14,16 @@
 <header class="relative overflow-x-clip px-12 sm:px-16 md:px-20 lg:px-36 xl:px-48 py-4 border-b border-b-orange-400 flex justify-between bg-light_black">
     <div class="flex items-center gap-4">
         <img src="img/logo.png" class="w-10" alt="Logo"/>
-        <h5 class="hidden text-white text-xl font-bold md:block">Kitofox Remote</h5>
+        <h5 class="hidden text-white text-xl font-bold logo-text whitespace-nowrap">Kitofox Remote</h5>
     </div>
-    <nav class="hidden sm:flex items-center gap-3 sm:gap-7">
+    <nav class="hidden sm:flex items-center gap-3 sm:gap-5 md:gap-6 lg:gap-7 ">
         <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none"
            id="howToUseButtonNav">How to use</a>
-        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none"
+        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none whitespace-nowrap"
            id="downloadsButtonNav">Downloads</a>
-        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none"
+        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none whitespace-nowrap"
+           href="privacy.html">Privacy</a>
+        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none whitespace-nowrap"
            id="creditsButtonNav">Credits</a>
     </nav>
     <div class="flex justify-center items-center sm:hidden" id="openNavMenuButton">
@@ -32,22 +34,29 @@
     </div>
     <ul class="absolute top-0 rounded-bl-md not-expanded select-none flex w-40 flex-col bg-gray_dark border-l-orange-400 border-b-orange-400 border-l border-b mobile-nav-transition"
         id="navMenu">
-        <li class="py-4 px-4 border-b-orange-400 border-b flex justify-between items-center" id="closeNavMenuButton">
+        <li class="py-4 px-4 border-b-orange-400 border-b flex justify-between items-center cursor-pointer"
+            id="closeNavMenuButton">
             <h6 class="text-white text-lg font-semibold">Menu</h6>
             <svg class="h-6 text-white fill-current" viewBox="0 0 512 512" xml:space="preserve"
                  xmlns="http://www.w3.org/2000/svg">
             <path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/>
           </svg>
         </li>
-        <li class="py-4 pl-4 border-b-orange-400 border-b" id="howToUseButtonNavMobile">
+        <li class="py-4 pl-4 border-b-orange-400 border-b cursor-pointer" id="howToUseButtonNavMobile">
             <h6 class="text-white font-semibold">How to use</h6>
         </li>
-        <li class="py-4 pl-4 border-b-orange-400 border-b" id="downloadsButtonNavMobile">
+        <li class="py-4 pl-4 border-b-orange-400 border-b cursor-pointer" id="downloadsButtonNavMobile">
             <h6 class="text-white font-semibold">Downloads</h6>
         </li>
-        <li class="py-4 pl-4" id="creditsButtonNavMobile">
+        <li class="py-4 pl-4 border-b-orange-400 border-b">
+            <a href="privacy.html">
+                <h6 class="text-white font-semibold">Privacy</h6>
+            </a>
+        </li>
+        <li class="py-4 pl-4 cursor-pointer" id="creditsButtonNavMobile">
             <h6 class="text-white font-semibold">Credits</h6>
         </li>
+
     </ul>
 </header>
 <main class="px-12 sm:px-16 md:px-20 lg:px-36 xl:px-48 flex flex-col items-center lg:items-stretch bg-gray_dark flex-1">
@@ -97,8 +106,8 @@
                 <h6 class="feature-header-text">Privacy</h6>
             </div>
             <p class="feature-body">
-                No data is ever collected. Whatever happens on your network stays on
-                your network.
+                Minimal data collection.
+                Only the required data for diagnostics and advertising on Android is collected.
             </p>
         </li>
         <li class="feature-panel">
@@ -347,8 +356,10 @@
         </div>
         <div class="flex flex-col w-fit">
             <div class="flex flex-col gap-4">
-                <h4 class="text-xl font-semibold text-gray-300 ">App development: <span class="text-orange-400 whitespace-nowrap">Hristo Gochev</span></h4>
-                <h4 class="text-xl font-semibold text-gray-300">Logo artwork: <span class="text-orange-400 whitespace-nowrap">Anastasija Savov</span></h4>
+                <h4 class="text-xl font-semibold text-gray-300 ">App development: <span
+                        class="text-orange-400 whitespace-nowrap">Hristo Gochev</span></h4>
+                <h4 class="text-xl font-semibold text-gray-300">Logo artwork: <span
+                        class="text-orange-400 whitespace-nowrap">Anastasija Savov</span></h4>
             </div>
         </div>
     </div>

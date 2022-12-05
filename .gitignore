@@ -1,1 +1,7 @@
 /.idea
+/package.json
+/tailwind.config.js
+
+/package-lock.json
+/node_modules
+/input.css
