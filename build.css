@@ -711,6 +711,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1973,11 +1977,6 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pl-4{
