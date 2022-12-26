@@ -101,9 +101,9 @@ window.addEventListener("load", function () {
     const download = url.searchParams.get("download");
     if (download === "windows") {
         downloadStartedModal.showModal();
-        document.location.href = "https://kitofox.com";
+        document.location.href = "https://deskfox.app";
     }else if(download==="linux"){
         downloadStartedModal.showModal();
-        document.location.href = "https://kitofox.com";
+        document.location.href = "https://deskfox.app";
     }
 });
