@@ -14,18 +14,25 @@
 <header class="relative overflow-x-clip px-12 sm:px-16 md:px-20 lg:px-36 xl:px-48 py-4 border-b border-b-orange-400 flex justify-between bg-light_black">
     <div class="flex items-center gap-4">
         <img src="img/logo.png" class="w-10" alt="Logo"/>
-        <h5 class="hidden text-white text-xl font-bold logo-text whitespace-nowrap">DeskFox</h5>
+        <h2 class="hidden text-white text-xl font-bold logo-text whitespace-nowrap">DeskFox</h2>
     </div>
-    <nav class="hidden sm:flex items-center gap-3 sm:gap-5 md:gap-6 lg:gap-7 ">
-        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none"
-           id="howToUseButtonNav">How to use</a>
-        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none whitespace-nowrap"
-           id="downloadsButtonNav">Downloads</a>
-        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none whitespace-nowrap"
-           href="privacy.html">Privacy</a>
-        <a class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none whitespace-nowrap"
-           id="creditsButtonNav">Credits</a>
-    </nav>
+    <ul class="hidden sm:flex items-center gap-3 sm:gap-5 md:gap-6 lg:gap-7 ">
+        <li class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none"
+            id="howToUseButtonNav">How to use
+        </li>
+        <li class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none whitespace-nowrap"
+            id="downloadsButtonNav">Downloads
+        </li>
+        <li>
+            <a class="cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg  select-none text-white text-base font-bold whitespace-nowrap"
+               href="privacy.html">
+                Privacy
+            </a>
+        </li>
+        <li class="text-white text-base font-bold cursor-pointer px-2.5 py-2.5 hover:bg-gray_dark rounded-lg select-none whitespace-nowrap"
+            id="creditsButtonNav">Credits
+        </li>
+    </ul>
     <div class="flex justify-center items-center sm:hidden" id="openNavMenuButton">
         <svg class="text-white fill-current h-7" viewBox="0 0 32 32" xml:space="preserve"
              xmlns="http://www.w3.org/2000/svg">
@@ -42,19 +49,21 @@
             <path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/>
           </svg>
         </li>
-        <li class="py-4 pl-4 border-b-orange-400 border-b cursor-pointer" id="howToUseButtonNavMobile">
-            <h6 class="text-white font-semibold">How to use</h6>
+        <li class="py-4 pl-4 border-b-orange-400 border-b cursor-pointer text-white font-semibold"
+            id="howToUseButtonNavMobile">
+            How to use
         </li>
-        <li class="py-4 pl-4 border-b-orange-400 border-b cursor-pointer" id="downloadsButtonNavMobile">
-            <h6 class="text-white font-semibold">Downloads</h6>
+        <li class="py-4 pl-4 border-b-orange-400 border-b cursor-pointer text-white font-semibold"
+            id="downloadsButtonNavMobile">
+            Downloads
         </li>
-        <li class="py-4 pl-4 border-b-orange-400 border-b">
-            <a href="privacy.html">
-                <h6 class="text-white font-semibold">Privacy</h6>
+        <li class="py-4 pl-4 border-b-orange-400 border-b  cursor-pointer">
+            <a href="privacy.html" class="text-white font-semibold">
+                Privacy
             </a>
         </li>
-        <li class="py-4 pl-4 cursor-pointer" id="creditsButtonNavMobile">
-            <h6 class="text-white font-semibold">Credits</h6>
+        <li class="py-4 pl-4 text-white font-semibold" id="creditsButtonNavMobile">
+            Credits
         </li>
 
     </ul>
@@ -64,9 +73,8 @@
         <div class="order-2 flex flex-col gap-11 text-center items-center mt-10 lg:text-left lg:w-3/5 lg:gap-12 lg:mt-0 lg:order-1 lg:items-start xl:w-2/3">
             <h1 class="text-white text-5xl font-bold leading">DeskFox Remote</h1>
             <h2 class="text-gray-200 text-xl md:w-10/12">
-                DeskFox is a simple, elegant and customizable remote control
-                app. Customize it based on your network speed or make use of its
-                many features.
+                DeskFox is a simple, elegant and customizable remote control for your desktop.
+                Customize it based on your network speed or make use of its many features.
             </h2>
             <h3 class="hidden text-white text-3xl lg:block">&ldquo;Sit back, Relax and Enjoy&rdquo;</h3>
             <div class="pt-4 lg:pb-8 lg:pt-6">
@@ -161,7 +169,8 @@
             <div>
                 <h6 class="text-xl font-semibold text-white mb-4">Mobile downloads:</h6>
                 <div class="flex flex-wrap gap-5">
-                    <a href="https://play.google.com/store/apps/details?id=com.hristoGochev.kitofoxRemote" id="android-download"
+                    <a href="https://play.google.com/store/apps/details?id=com.hristoGochev.kitofoxRemote"
+                       id="android-download"
                        class="px-5 touchable-button lg:cursor-pointer flex items-center py-3 justify-center border border-android_green rounded-md gap-3 outline-none hover:bg-gray_dark_hover_mobile lg:hover:bg-gray_dark_hover">
                         <svg class="h-7" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                            <g>
@@ -188,7 +197,8 @@
             <div>
                 <h6 class="text-xl font-semibold text-white mb-4">PC downloads:</h6>
                 <div class="flex w-fit flex-wrap gap-5">
-                    <a download id="windows-download" href="https://dl.dropboxusercontent.com/s/gtrw2e4mrrbx2zm/DeskFoxInstaller.exe?dl=0"
+                    <a download id="windows-download"
+                       href="https://dl.dropboxusercontent.com/s/gtrw2e4mrrbx2zm/DeskFoxInstaller.exe?dl=0"
                        class="py-3 px-5 touchable-button lg:cursor-pointer flex items-center border border-windows_blue rounded-md gap-3 outline-none hover:bg-gray_dark_hover_mobile lg:hover:bg-gray_dark_hover">
                         <svg class="h-7" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                             <g id="_x33__stroke">
@@ -203,7 +213,8 @@
                         <h6 class="text-base text-white select-none">Windows</h6>
                     </a>
 
-                    <a download id="linux-download" href="https://dl.dropboxusercontent.com/s/stwcb3smpgpj1s3/DeskFox.tar.gz?dl=0"
+                    <a download id="linux-download"
+                       href="https://dl.dropboxusercontent.com/s/stwcb3smpgpj1s3/DeskFox.tar.gz?dl=0"
                        class="py-3 pl-5 pr-7 touchable-button lg:cursor-pointer flex items-center border border-linux_yellow rounded-md gap-3 outline-none hover:bg-gray_dark_hover_mobile lg:hover:bg-gray_dark_hover">
                         <svg class="h-7" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                             <g>
